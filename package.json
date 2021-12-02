@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/react": "^17.0.37",
@@ -15,9 +18,12 @@
     "autoprefixer": "^10.4.0",
     "eslint": "^8.3.0",
     "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.27.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "git-commit-msg-linter": "^3.2.8",
+    "husky": "^7.0.0",
+    "lint-staged": "^12.1.2",
     "postcss": "^8.4.4",
     "prettier": "2.5.0",
     "tailwindcss": "^2.2.19",
