@@ -28,7 +28,10 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
                 </div>
               </Link>
             </div>
+            <div className="flex items-center">
             <Navigation />
+            <ThemeSwitch />
+            </div>
           </div>
         </Container>
       </header>
