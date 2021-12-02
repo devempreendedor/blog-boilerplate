@@ -1,0 +1,7 @@
+{
+  "title": "Blog Boilerplate",
+  "description": "A boilerplate start for blog or personal site",
+  "image": "images/site-preview.png",
+  "type": "website",
+  "WEBSITE_HOST_URL": ""
+}
