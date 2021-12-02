@@ -37,7 +37,7 @@ const PostPage = ({ source, frontMatter }: PostPageProps): JSX.Element => {
   const customMeta: MetaProps = {
     title: `${frontMatter.title} - Hunter Chang`,
     description: frontMatter.description,
-    image: `${meta.WEBSITE_HOST_URL}${frontMatter.image}`,
+    image: `${meta.siteUrl}${frontMatter.image}`,
     date: frontMatter.date,
     type: 'article',
   }
