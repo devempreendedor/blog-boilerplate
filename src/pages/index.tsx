@@ -29,7 +29,7 @@ function HomePage({ posts }: HomeProps) {
                 {format(parseISO(post.date), 'MMMM dd, yyyy')}
               </p>
               <h1 className="mb-2 text-xl">
-                <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
+                <Link as={`/p/${post.slug}`} href={`/p/[slug]`}>
                   <a className="text-gray-900 dark:text-white dark:hover:text-blue-400">
                     {post.title}
                   </a>
@@ -37,7 +37,7 @@ function HomePage({ posts }: HomeProps) {
               </h1>
               <p className="mb-3">{post.description}</p>
               <p>
-                <Link as={`/posts/${post.slug}`} href={`/posts/[slug]`}>
+                <Link as={`/p/${post.slug}`} href={`/p/[slug]`}>
                   <a>Read More</a>
                 </Link>
               </p>
