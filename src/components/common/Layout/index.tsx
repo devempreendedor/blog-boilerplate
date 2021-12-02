@@ -2,6 +2,7 @@ import { ReactNode } from 'react'
 import { MetaProps } from 'types/layout'
 import Head from '../Head'
 import Navigation from '../Navigation'
+import ThemeSwitch from '../ThemeSwitch'
 
 type LayoutProps = {
   children: ReactNode
@@ -18,7 +19,10 @@ const Layout = ({ children, customMeta }: LayoutProps) => {
             <div>
               <span>Boilerplate</span>
             </div>
-            <Navigation />
+            <div className="flex items-center">
+              <Navigation />
+              <ThemeSwitch />
+            </div>
           </div>
         </div>
       </header>
